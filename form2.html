@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+     <style>    div{
+        background-color: rgba(240, 248, 255, 0.822);
+        padding: 20px;
+        border: rgba(240, 248, 255, 0.822);
+        margin: 20px;
+        border-radius: 20px;
+        font-family: cursive;
+    }
+    #name ,#date ,#email,#address ,#pin ,#card_no,#exp_date ,#cvv,select{
+        padding: 5px;
+        margin: 4px;
+        width: 100%;
+        border: rgba(240, 248, 255, 0.822);
+        border-radius: 5px;
+
+        }
+        button{
+            width: 100%;
+            padding: 15px;
+            border: rgba(240, 248, 255, 0.822);
+            background-color:lightseagreen;
+            color: white;
+            border-radius: 20px;
+        }
+        fieldset{
+            background-color: white;
+            border-radius: 5px;
+            
+        }
+        
+        </style>
+</head>
+<body><div>
+    <h1><b><center>Contact information </center></b></h1>
+    Name<input type="text" name="name" id="name" required placeholder="Enter your name"> </input>
+    <br> <br> Date<input type="date" name="date" id="date" required >
+    <br> <br><fieldset><legend>Gender</legend>
+        <br><input type="radio" name="gender" id="gender" required>Male
+    <input type="radio" name="gender" id="gender">Female</fieldset>
+    <br> <br> Email<input type="email" name="email" id="email" required placeholder="Enter your email">
+    <br> <br> Address<input type="address" name="address" id="address" required placeholder="Enter your address " style= height:140px;>
+    <br> <br> Pincode<input type="number" name="pin" id="pin" required placeholder="Your pincode ">
+  <h1><center><b>Payment information</b></center></h1>
+    Card type<select name="card_type" id="card_type">
+        <option value="">--select your card_type--</option>
+        <option value="rupay">Rupay</option>
+        <option value="visa">Visa</option>
+        <option value="master_card">Master card</option>
+    </select>
+    <br> <br> Card number<input type="number" name="card_no" id="card_no" placeholder="Card number">
+    <br> <br> Expiration date<input type="date" name="exp_date" id="exp_date" placeholder="Card Expiration date">
+    <br> <br> CVV<input type="number" name="cvv" id="cvv" placeholder="CVV">
+    <br><br><button>PAY NOW</button></div>
+
+</body>
+</html>
